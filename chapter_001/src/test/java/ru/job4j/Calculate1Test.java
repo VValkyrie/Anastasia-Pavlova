@@ -13,7 +13,7 @@ import static org.junit.Assert.assertThat;
 * @version $Id$
 * @since 0.1
 */
-public class CalculateTest {
+public class Calculate1Test {
 /**
 * Test add.
 */
@@ -21,12 +21,12 @@ public class CalculateTest {
 public void whenAddOneToOneThenTwo() {
 ByteArrayOutputStream out = new ByteArrayOutputStream();
 System.setOut(new PrintStream(out));
-Calculate.main(null);
+Calculate1.main(null);
 assertThat(
 out.toString(),
 is(
 String.format(
-"Hello, world!%s",
+"Hello, world%s",
 System.getProperty("line.separator")
 )
 )
