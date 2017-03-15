@@ -1,4 +1,4 @@
-/**
+/**.
 * //package for test
 *
 * @author Anastasia Pavlova (mailto:a-pavlova-1986@yandex.ru)
