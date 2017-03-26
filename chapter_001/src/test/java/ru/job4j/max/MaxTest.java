@@ -17,10 +17,13 @@ public class MaxTest {
      */
     @Test
 
+	/**.
+	* Метод для тестирования public int max
+	*/
     public void whenReturnTheMax() {
         Max value = new Max();
-        value.max(2, 1);
+        double result = value.max(2, 1);
         double expected = 2;
-
+		assertThat(result, is(expected));
     }
 }
