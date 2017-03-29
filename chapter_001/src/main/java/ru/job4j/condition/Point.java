@@ -20,7 +20,10 @@ package ru.job4j.condition;
  	*@return результат.
 	*/
 		private int x;
-		private int y;
+	/**
+	 * point of y.
+	 */
+	private int y;
 
 	/**.
 	 * конструктор Point описывает координаты точки.
@@ -57,5 +60,3 @@ package ru.job4j.condition;
 		}
 
 	}
-
-
