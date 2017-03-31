@@ -23,11 +23,9 @@ public class TriangleTest {
  */
     public void forCheckAreaTriangle() {
         Triangle abc = new Triangle();
-        abc.area(1, 3, 10, 10, 3, 3);
-        double result = 24.5;
-        boolean expected = true;
+        double result = abc.area(1, 3, 10, 10, 3, 3);
+        double expected = 24.5;
         assertThat(result, is(expected));
     }
-
 }
 
