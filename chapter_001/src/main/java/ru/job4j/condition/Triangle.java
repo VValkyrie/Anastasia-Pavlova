@@ -16,9 +16,10 @@ public class Triangle {
         this.a = a;
         this.b = b;
         this.c = c;
+
     }
 
-    public double area(int x1, int x2, int x3, int y1, int y2, int y3) {
+    public double area(double x1, double x2, double x3, double y1, double y2, double y3) {
 //calculate the triangle area
         double area = 1/2 * ((x2 - x1) * (y3 - y1) - (x3 - x1) * (y2 - y1));
         return area;
