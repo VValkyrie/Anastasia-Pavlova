@@ -4,7 +4,7 @@ import org.junit.Test;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
-/**
+/**.
  * Test.
  *
  * @author Anastasia Pavlova (mailto:a-pavlova-1986@yandex.ru)
@@ -13,7 +13,7 @@ import static org.junit.Assert.assertThat;
  */
 
 public class TriangleTest {
-    /**
+    /**.
      * класс для тестирования калькулятора.
      */
     @Test
@@ -26,10 +26,39 @@ public class TriangleTest {
             Point b = new Point(10, 10);
             Point c = new Point(3, 3);
             Triangle abc = new Triangle(a, b, c);
-            double result = abc.area(1, 3, 10, 10, 3, 3);
+            double result = abc.area();
             double expected = 24.5;
             assertThat(result, is(expected));
         }
+
+    /**.
+     * Метод для проверки в случае, если треугольник не существует.
+     */
+
+    @Test
+    public void whenPointsNotInLineThenExist() {
+        Point a = new Point(1, 2);
+        Point b = new Point(2, 3);
+        Point c = new Point(3, 4);
+        Triangle abc = new Triangle(a, b, c);
+        boolean result = abc.realTriangle();
+        boolean expected = false;
+        assertThat(result, is(expected));
     }
+
+   /**.
+     * Метод, проверяющий возможность существования треугольника.
+     */
+   public void whenPointInLineThenExist() {
+       Point a = new Point(1, 3);
+       Point b = new Point(10, 10);
+       Point c = new Point(3, 3);
+       Triangle abc = new Triangle(a, b, c);
+       boolean result = abc.realTriangle();
+       boolean expected = true;
+       assertThat(result, is(expected));
+       }
+    }
+
 
 
