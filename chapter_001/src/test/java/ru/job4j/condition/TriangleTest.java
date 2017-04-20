@@ -14,13 +14,19 @@ import static org.junit.Assert.assertThat;
 
 public class TriangleTest {
     /**.
-     * класс для тестирования калькулятора.
+     * Метод, проверяющий принадлежность точки прямой.
      */
     @Test
 
-/**.
- * Метод, проверяющий принадлежность точки прямой.
- */
+    /**
+     * @param a - точка а.
+     * @param b - точка b.
+     * @param c - точка c.
+     * @param x - координаты абсциссы.
+     * @param y - координаты ординаты.
+     * @param result - передает результат.
+     * @param expected - ожидаемый результат.
+     */
     public void forCheckAreaTriangle() {
             Point a = new Point(1, 3);
             Point b = new Point(10, 10);
