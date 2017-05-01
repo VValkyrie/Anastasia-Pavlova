@@ -49,7 +49,8 @@ public class Triangle {
     public double area() {
 
 //calculate the triangle area
-        double area = 0.5 * ((this.b.getX() - this.a.getX()) * (this.c.getY() - this.a.getY()) - ((this.c.getX() - this.a.getX()) * (this.b.getY() - this.a.getY())));
+        double area = Math.abs(0.5 * ((this.b.getX() - this.a.getX()) * (this.c.getY() - this.a.getY()) - ((this.c.getX() - this.a.getX()) * (this.b.getY() - this.a.getY()))));
+
 
         /**.
          * @param area - площадь треугольника.

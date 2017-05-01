@@ -3,6 +3,7 @@ package ru.job4j.condition;
 import org.junit.Test;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
+import static org.hamcrest.number.IsCloseTo.closeTo;
 
 /**.
  * Test.
@@ -62,9 +63,11 @@ public class TriangleTest {
        Triangle abc = new Triangle(a, b, c);
        boolean result = abc.realTriangle();
        boolean expected = true;
-       assertThat(result, is(expected));
+       assertThat(result, is(closeTo(24.5, 0.01)));
        }
-    }
+
+
+}
 
 
 
